@@ -1,0 +1,103 @@
+@import "mixins";
+
+@import "icons"; // icons!
+@import "global"; // global items
+@import "framework"; // pieces of the layout that make up large parts - header, nav, shield, content wrappers
+@import "pages";
+@import "forms";
+
+/***
+  * FONTS
+  ***/
+
+$mainFont: Helvetica, Arial, sans-serif;
+$headerFont: $mainFont;
+
+// CUSTOM FONTS
+$mainFont: Arial, Helvetica, sans-serif;
+$headerFont: $mainFont;
+
+@font-face {
+  font-family: "foodora";
+  src:url("fonts/foodora.eot");
+  src:url("fonts/foodora.eot?#iefix") format("embedded-opentype"),
+    url("fonts/foodora.woff") format("woff"),
+    url("fonts/foodora.ttf") format("truetype"),
+    url("fonts/foodora.svg#foodora") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon[rel="foodora"] {
+  &:before {
+    font-family: "foodora" !important;
+    content: "a" !important;
+  }
+}
+// END CUSTOM FONTS
+
+@import "fonts-styles";
+
+// CUSTOM FONT STYLES
+// END CUSTOM FONT STYLES
+
+/***
+  * COLOURING
+  ***/
+
+$main: #f78f1e;
+$white: #FFFFFF;
+$black: #000000;
+$darkGrey: #323031;
+$lightGrey: #d0d2d3;
+$alertRed: #FF0000; // new! fav!
+
+@import "colours-default";
+
+// CUSTOM COLOURS
+$noresults: $white;
+$shortcutBKG: rgba($white, 0.25);
+// END CUSTOM COLOURS
+
+@import "colours-styles";
+
+/***
+  * CUSTOM STYLING
+  ***/
+
+.content { // no-repeat, cover, center center, fixed
+  background-image: url('../background.jpg');
+}
+.loader .content {
+  background-image: url('../splash_7201280.png');
+  background-position: center center;
+}
+
+.shortcuts.col_3.w_text a.icon {
+  &:before {
+    margin-bottom: 5px;
+    font-size: 12vw;
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    top: 35%;
+    -webkit-transform: translateY(-35%);
+    transform: translateY(-35%);
+  }
+  > span {
+    font-size: 3vw;
+    font-weight: 500;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    top: 80%;
+    -webkit-transform: translateY(-80%);
+    transform: translateY(-80%);
+  }
+}
