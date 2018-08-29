@@ -3,12 +3,12 @@
 		xmlns:gap = "http://phonegap.com/ns/1.0"
 		xmlns:android="http://schemas.android.com/apk/res/android"
 		id        = "guru.trueblue.hotelgelato"
-		android-versionCode="2120"
-		versionCode="2120"
-		version   = "2.1.2">
+		android-versionCode="2130"
+		versionCode="2130"
+		version   = "2.1.3">
 
 		<gap:config-file platform="ios" parent="CFBundleShortVersionString">
-	    <string>2.1.2</string>
+	    <string>2.1.3</string>
 		</gap:config-file>
 
 		<name>Hotel Gelato</name>
@@ -112,7 +112,7 @@
 	  <plugin name="cordova-plugin-dialogs" source="npm" />
 	  <plugin name="cordova-plugin-statusbar" source="npm" />
 	  <plugin name="cordova-custom-config" version="*"/>
-	  <plugin name="cordova.plugins.diagnostic" source="npm" spec="4.0.8" />
+	  <plugin name="cordova.plugins.diagnostic" source="npm" spec="4.0.9" />
 	  <plugin name="cordova-plugin-appavailability" source="npm" spec="0.4.2" />
 
 	  <platform name="android">
@@ -144,7 +144,7 @@
 	  </platform>
 
 	  <platform name="ios">
-	    <preference name="phonegap-version" value="cli-6.5.0" />
+	    <preference name="phonegap-version" value="cli-7.1.0"/>
 	    <plugin name="cordova-plugin-splashscreen" source="npm" spec="3.0.0" />
 			<plugin name="cordova-plugin-legacy-whitelist" source="npm" />
 
