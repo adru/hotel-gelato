@@ -98,7 +98,7 @@
 	  <preference name="android-targetSdkVersion" value="26" />
 		<preference name="android-installLocation" value="auto" />
 
-	  <!-- <plugin name="phonegap-plugin-barcodescanner" /> -->
+	  <plugin name="phonegap-plugin-barcodescanner" />
 	  <plugin name="cordova-plugin-inappbrowser" />
 	  <plugin name="cordova-plugin-appversion" source="npm" />
 	  <plugin name="cordova-plugin-uniquedeviceid" source="npm" />
@@ -163,19 +163,6 @@
 	  <gap:config-file platform="ios" parent="FacebookUrlSchemeSuffix">
 	    <string>truebluehotelgelato</string>
 	  </gap:config-file>
-
-		<!-- barcode la v.0.7.2 tiene problemas, ojo !-->
-		<gap:plugin name="cordova-plugin-barcodescanner"   source="npm" spec="0.7.0" >
-		     <variable name="CAMERA_USAGE_DESCRIPTION" value="The camera is used to capture QR codes to collect points and redeem rewards." />
-		</gap:plugin>
-
-		<plugin name="cordova-plugin-ios-camera-permissions" >
-		     <variable name="CAMERA_USAGE_DESCRIPTION" value="The camera is used to capture QR codes to collect points and redeem rewards." />
-		     <variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="The camera is used to capture QR codes to collect points and redeem rewards." />
-		</plugin><!-- spec="1.0.3" !-->
-
-		<variable name="CAMERA_USAGE_DESCRIPTION" value="The camera is used to capture QR codes to collect points and redeem rewards." />
-		<variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="The camera is used to capture QR codes to collect points and redeem rewards." />
 
 	  <!-- IOS COCOA KEYS -->
 	  <gap:config-file platform="ios" parent="NSLocationUsageDescription">
